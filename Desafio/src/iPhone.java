@@ -1,4 +1,18 @@
 public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
+
+    public static void main(String[] args) throws Exception {
+        iPhone iphone = new iPhone();
+        iphone.tocar();
+        iphone.pausar();
+        iphone.selecionarMusica("Música 1");
+        iphone.ligar("123456789");
+        iphone.atender();
+        iphone.iniciarCorreioVoz();
+        iphone.exibirPagina("www.google.com");
+        iphone.adicionarNovaAba();
+        iphone.atualizarPagina();
+    }
+
     @Override
     public void tocar() {
         System.out.println("Tocando música");
